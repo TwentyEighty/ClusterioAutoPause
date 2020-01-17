@@ -9,5 +9,7 @@ module.exports = {
 	description: "Automatically 'pauses' the game (sets speed to really low) when all servers are empty",
 	masterPlugin: "masterPlugin.js",
 	scriptOutputFileSubscription: "clusterioAutoPause.txt",
-	pauseSpeed: 0.01
+	
+	// 0.01 is too slow, clusterio times out and even factorio gets upset. 0.05 seems ok
+	pauseSpeed: 0.05
 }
